@@ -6,7 +6,7 @@ resource "aws_instance" "my_latestecs_instance" {
     ##ami           = "${data.aws_ami.latest_ecs.id}" ## Copy/Paste any AMI you want
     instance_type = "t2.micro" ## Pick which instance type you want
     # key_name = ## If you have key pair, put it here.
-    # subnet_id = ## Check vpc.tf
+    subnet_id = "aws_vpc.main.id" ## Check vpc.tf
     
     # vpc_security_group_ids = 
 
