@@ -1,7 +1,7 @@
 
 ## Create AWS S3 Bucket
 resource "aws_s3_bucket" "static-web" {
-  bucket = "bryantconti-tester.com"
+  bucket = "bryantconti.com"
   acl    = "public-read"
   policy = file("policy.json")
 
